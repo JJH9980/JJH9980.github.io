@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   
   
+  <meta name="description" content="canvas的绘制绘制环境的编写： 定制二维空间：var oGC=oC.getContext(“2d”);1.路径的绘制beginPath：开始绘制路径（防止后面设置影响上面绘图）closePath：结束绘制路径（闭合绘图）moveTo：移动到绘制的新目标点lineTo：新的目标点stroke：画线">
+  
 
   
   
@@ -11,15 +13,19 @@
   
   
   
-  <title>Cl&#39;s Blog</title>
+  <title>canvas | Cl&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Cl&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="canvas的绘制绘制环境的编写： 定制二维空间：var oGC=oC.getContext(“2d”);1.路径的绘制beginPath：开始绘制路径（防止后面设置影响上面绘图）closePath：结束绘制路径（闭合绘图）moveTo：移动到绘制的新目标点lineTo：新的目标点stroke：画线，默认黑色fill：填充，默认黑色rect：矩形区域（与fill组成fillRect方法）clear">
+<meta property="og:type" content="article">
+<meta property="og:title" content="canvas">
+<meta property="og:url" content="http://yoursite.com/2018/11/02/canvas/index.html">
 <meta property="og:site_name" content="Cl&#39;s Blog">
+<meta property="og:description" content="canvas的绘制绘制环境的编写： 定制二维空间：var oGC=oC.getContext(“2d”);1.路径的绘制beginPath：开始绘制路径（防止后面设置影响上面绘图）closePath：结束绘制路径（闭合绘图）moveTo：移动到绘制的新目标点lineTo：新的目标点stroke：画线，默认黑色fill：填充，默认黑色rect：矩形区域（与fill组成fillRect方法）clear">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-02T11:51:35.934Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cl&#39;s Blog">
+<meta name="twitter:title" content="canvas">
+<meta name="twitter:description" content="canvas的绘制绘制环境的编写： 定制二维空间：var oGC=oC.getContext(“2d”);1.路径的绘制beginPath：开始绘制路径（防止后面设置影响上面绘图）closePath：结束绘制路径（闭合绘图）moveTo：移动到绘制的新目标点lineTo：新的目标点stroke：画线，默认黑色fill：填充，默认黑色rect：矩形区域（与fill组成fillRect方法）clear">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -63,17 +69,15 @@
     </nav>
 </header>
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
-  
-    <article id="post-canvas" class="post-canvas post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-canvas" class="post-canvas post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
         
         
   
-    <h1 class="entry-title">
-      <a class="article-title" href="/2018/11/02/canvas/">canvas</a>
+    <h1 class="entry-title article-title">
+      canvas
     </h1>
   
 
@@ -103,148 +107,20 @@
 </article>
 
 
-
-
-
-
-  
-    <article id="post-评论试验" class="post-评论试验 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2018/11/02/评论试验/">评论试验</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/02/评论试验/" data-id="cjnzyndb1000464r6r124eyox" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>test “测试”</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2018/11/02/评论试验/">
-    <time datetime="2018-11-02T01:40:11.000Z" class="entry-date">
-        2018-11-02
-    </time>
-</a>
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
     
     
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="port-你好-Hexo" class="port-你好-Hexo post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2018/11/01/你好-Hexo/">你好,Hexo</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/01/你好-Hexo/" data-id="cjnzyndau000264r6zdjbvznw" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2018/11/01/你好-Hexo/">
-    <time datetime="2018-11-01T06:50:41.000Z" class="entry-date">
-        2018-11-01
-    </time>
-</a>
+        <span class="nav-next"><a href="/2018/11/02/评论试验/" rel="next">评论试验 <span class="meta-nav">→</span></a></span>
     
-    
-    </footer>
-</article>
+</nav><!-- .nav-single -->
 
 
 
 
 
 
-  
-    <article id="post-hello-world" class="post-hello-world post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2018/11/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/01/hello-world/" data-id="cjnzyndb4000564r6riqxka6v" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2018/11/01/hello-world/">
-    <time datetime="2018-11-01T06:29:16.696Z" class="entry-date">
-        2018-11-01
-    </time>
-</a>
-    
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-  
 
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
