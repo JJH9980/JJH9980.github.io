@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   
   
+  <meta name="description" content="正则表达式（身份证）身份证：地区编码+出生年份+出生日期+最后四位1) dddddd：6位地区编码，地区编码没有以0开头的，举一个例子，北京用的就是110开头，河北用的就是130开头，福建省用的是350开头，此类。
+2) yyyymmdd: 出生年(四位年)月日，前四位是年份，没啥可说的，月份只能是">
+  
 
   
   
@@ -11,15 +14,19 @@
   
   
   
-  <title>Archives: 2018 | Cl&#39;s Blog</title>
+  <title>正则表达式（身份证） | Cl&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Cl&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="正则表达式（身份证）身份证：地区编码+出生年份+出生日期+最后四位1) dddddd：6位地区编码，地区编码没有以0开头的，举一个例子，北京用的就是110开头，河北用的就是130开头，福建省用的是350开头，此类。 2) yyyymmdd: 出生年(四位年)月日，前四位是年份，没啥可说的，月份只能是01~12，日期只能是01~31 3) xxx：三位数字 4) y: 校验码，0~9以及X（有时有人">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式（身份证）">
+<meta property="og:url" content="http://yoursite.com/2018/11/02/正则表达式（身份证）/index.html">
 <meta property="og:site_name" content="Cl&#39;s Blog">
+<meta property="og:description" content="正则表达式（身份证）身份证：地区编码+出生年份+出生日期+最后四位1) dddddd：6位地区编码，地区编码没有以0开头的，举一个例子，北京用的就是110开头，河北用的就是130开头，福建省用的是350开头，此类。 2) yyyymmdd: 出生年(四位年)月日，前四位是年份，没啥可说的，月份只能是01~12，日期只能是01~31 3) xxx：三位数字 4) y: 校验码，0~9以及X（有时有人">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-02T12:36:19.497Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cl&#39;s Blog">
+<meta name="twitter:title" content="正则表达式（身份证）">
+<meta name="twitter:description" content="正则表达式（身份证）身份证：地区编码+出生年份+出生日期+最后四位1) dddddd：6位地区编码，地区编码没有以0开头的，举一个例子，北京用的就是110开头，河北用的就是130开头，福建省用的是350开头，此类。 2) yyyymmdd: 出生年(四位年)月日，前四位是年份，没啥可说的，月份只能是01~12，日期只能是01~31 3) xxx：三位数字 4) y: 校验码，0~9以及X（有时有人">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -63,30 +70,36 @@
     </nav>
 </header>
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-正则表达式（身份证）" class="post-正则表达式（身份证） post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="post type-post status-publish format-standard hentry archive-type-post">
-  <header class="entry-header">
-      
-  
-    <h1 class="entry-title">
-      <a class="archive-article-title" href="/2018/11/02/正则表达式（身份证）/">正则表达式（身份证）</a>
+    <h1 class="entry-title article-title">
+      正则表达式（身份证）
     </h1>
   
 
-  </header>
-  <footer class="entry-meta">
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/02/正则表达式（身份证）/" data-id="cjo00e3ke0005pgr6vpeh8bjp" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>正则表达式（身份证）<br>身份证：地区编码+出生年份+出生日期+最后四位<br>1) dddddd：6位地区编码，地区编码没有以0开头的，举一个例子，北京用的就是110开头，河北用的就是130开头，福建省用的是350开头，此类。</p>
+<p>2) yyyymmdd: 出生年(四位年)月日，前四位是年份，没啥可说的，月份只能是01~12，日期只能是01~31</p>
+<p>3) xxx：三位数字</p>
+<p>4) y: 校验码，0~9以及X（有时有人会写成x）<br>地区编码：[1-9]\d{6}<br>出生年份：[1-9]{3}<br>出生月份：((0[1-9])|([1-2]\d)|(3[0-1]))<br>最后四位: ((\d{4})|(\d{3}[Xx]))<br>var reg = /^[1-9]\d{6}[1-9]\d{3}((0[1-9])|(1[0-2]))((0[1-9])|([1-2]\d)|(3[0-1]))((\d{4})|(\d{3}[Xx]))$/;</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
     <a href="/2018/11/02/正则表达式（身份证）/">
     <time datetime="2018-11-02T12:26:26.000Z" class="entry-date">
         2018-11-02
@@ -96,102 +109,22 @@
     
     </footer>
 </article>
-  
-    
-    
-    <article class="post type-post status-publish format-standard hentry archive-type-post">
-  <header class="entry-header">
-      
-  
-    <h1 class="entry-title">
-      <a class="archive-article-title" href="/2018/11/02/canvas/">canvas</a>
-    </h1>
-  
 
-  </header>
-  <footer class="entry-meta">
-    <a href="/2018/11/02/canvas/">
-    <time datetime="2018-11-02T11:42:33.000Z" class="entry-date">
-        2018-11-02
-    </time>
-</a>
-    
-    
-    </footer>
-</article>
-  
-    
-    
-    <article class="post type-post status-publish format-standard hentry archive-type-post">
-  <header class="entry-header">
-      
-  
-    <h1 class="entry-title">
-      <a class="archive-article-title" href="/2018/11/02/评论试验/">评论试验</a>
-    </h1>
-  
 
-  </header>
-  <footer class="entry-meta">
-    <a href="/2018/11/02/评论试验/">
-    <time datetime="2018-11-02T01:40:11.000Z" class="entry-date">
-        2018-11-02
-    </time>
-</a>
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
     
     
-    </footer>
-</article>
-  
+        <span class="nav-next"><a href="/2018/11/02/canvas/" rel="next">canvas <span class="meta-nav">→</span></a></span>
     
-    
-    <article class="post type-post status-publish format-standard hentry archive-type-port">
-  <header class="entry-header">
-      
-  
-    <h1 class="entry-title">
-      <a class="archive-article-title" href="/2018/11/01/你好-Hexo/">你好,Hexo</a>
-    </h1>
-  
+</nav><!-- .nav-single -->
 
-  </header>
-  <footer class="entry-meta">
-    <a href="/2018/11/01/你好-Hexo/">
-    <time datetime="2018-11-01T06:50:41.000Z" class="entry-date">
-        2018-11-01
-    </time>
-</a>
-    
-    
-    </footer>
-</article>
-  
-    
-    
-    <article class="post type-post status-publish format-standard hentry archive-type-post">
-  <header class="entry-header">
-      
-  
-    <h1 class="entry-title">
-      <a class="archive-article-title" href="/2018/11/01/hello-world/">Hello World</a>
-    </h1>
-  
 
-  </header>
-  <footer class="entry-meta">
-    <a href="/2018/11/01/hello-world/">
-    <time datetime="2018-11-01T06:29:16.696Z" class="entry-date">
-        2018-11-01
-    </time>
-</a>
-    
-    
-    </footer>
-</article>
-  
-  
-    </div></section>
-  
+
+
+
+
 
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
