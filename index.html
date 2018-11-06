@@ -65,6 +65,51 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
+    <article id="post-svg使用" class="post-svg使用 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2018/11/06/svg使用/">svg使用</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/06/svg使用/" data-id="cjo5ply3c0004n8r6v2qzt34t" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>svg的使用：<br>1.svg是一种用XML定义的语言，用来描述二维及矢量/栅格图。<br>2.svg的使用：<br>//页面中直接引入SVG文件<br>图片：<img src="tu1.svg"><br>元素：<div style="width:200px;height:200px;background: url(tu2.svg) no-repeat"></div><br>框架:  <iframe src="tu3.svg"></iframe><br>//在html页面中写svg</p>
+<p><div id="div1"><br>    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><br/>        <circle cs="100" cy="100" r="40" fill="red"> </circle><br/>    </svg><br></div><br>3.svg的语法<br>3.1：圆形：circle:cx  cy  r fill stroke stroke-width stroke-opacity //圆心(cx xy) 半径:r 颜色：fill  边框颜色:stroke  透明度：stroke-opacity –transparent<br>3.2：圆角矩形:rect:width heigth x y rx ry//宽高左上角x/y轴坐标 圆角x/y角度（只设置rx则为正圆角）<br>3.3：画线:line:x1 y1 x2 y2 stroke//起点X/Y轴坐标，终点x/y轴坐标，颜色<br>3.4：椭圆：ellipse:cx cy rx ry//圆心X/Y轴坐标，X/Y轴半径<br>3.5：折线：polyline:points//折点设置，及fill=”transparent”去掉填充。<br>    <polyline points="0,0 0,20 20,20 20,40 40,40 40,60" style="fill:white;stroke:red;stroke-width:2"></polyline><br> 3.6：文字：text: x y text-anchor(middle/start/end) fill//文字在X/Y轴坐标 对齐点 颜色用的是fill<br> 3.7： 图片:image：x y width height xlink//图片在X/Y轴坐标图片宽高 图片地址：xlink:href<br> eg://创建svg<br> var svgDome=document.createElementNS(“<a href="http://www.w3.org/2000/svg&quot;,&quot;svg&quot;" target="_blank" rel="noopener">http://www.w3.org/2000/svg&quot;,&quot;svg&quot;</a>)<br> svgDome.style.width=”400px”;<br> svgDome.style.height=”400px”;<br> document.body.appendChild(svgDemo);<br> var image=document.createElementNS(“<a href="http://www.w3.org/2000/svg&quot;,&quot;image&quot;)" target="_blank" rel="noopener">http://www.w3.org/2000/svg&quot;,&quot;image&quot;)</a>;<br> image.setAttribute(“x”,”100”);<br> image.setAttrubute(“y”,”100”);<br>  image.setAttribute(“width”,”100”);<br> image.setAttrubute(“height”,”100”);<br> image.href.baseVal=”图片的url”;<br> svgDemo.appendChild(image);<br> 3.8：g:分组标签//是一个容器标签，用来组合元素，这样可以使用共有属性transform=”translate(0,0)”<br> eg:<br> <g style="cursor:pointer"><br>    <text x="100" y="108" font-size="20">文字</text><br> </g><br>/////////////////////////////////////////////////////////////////<br> 例子：靶子的绘制<br>&lt;!DOCTYPE HTML&gt;</p>
+<html><br><head><meta name="generator" content="Hexo 3.8.0"><br><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><br><title>无标题文档</title><br></head><br><body><br><div id="div1" style="width:400px; height:400px;"><br>    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><br/>        <g transform="translate(200,200)"><br/>            <circle cx="0" cy="0" r="20" fill="red"/><br/>            <circle cx="0" cy="0" r="50" stroke="red" fill="transparent" stroke-width="4"/><br/>            <circle cx="0" cy="0" r="80" stroke="red" fill="transparent" stroke-width="4"/><br/>            <circle cx="0" cy="0" r="110" stroke="red" fill="transparent" stroke-width="4"/><br/>            <circle cx="0" cy="0" r="140" stroke="red" fill="transparent" stroke-width="4"/><br/>            <line x1="-200" y1="0" x2="200" y2="0" stroke="red" stroke-width="2"/><br/>            <line x1="0" y1="-200" x2="0" y2="200" stroke="red" stroke-width="2"/><br/>        </g><br/>    </svg><br></div><br><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body><br></html>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2018/11/06/svg使用/">
+    <time datetime="2018-11-06T11:18:20.000Z" class="entry-date">
+        2018-11-06
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
     <article id="post-正则表达式（身份证）" class="post-正则表达式（身份证） post type-post status-publish format-standard hentry">
     <!---->
 
@@ -80,7 +125,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/02/正则表达式（身份证）/" data-id="cjo00e3ke0005pgr6vpeh8bjp" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/02/正则表达式（身份证）/" data-id="cjo5ply3o0007n8r6viwnowxx" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -126,7 +171,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/02/canvas/" data-id="cjo00e3j60000pgr69lfja6ws" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/02/canvas/" data-id="cjo5ply2s0000n8r6svia4pv0" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -169,7 +214,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/02/评论试验/" data-id="cjo00e3kh0006pgr6k2hxdvcq" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/02/评论试验/" data-id="cjo5ply3k0006n8r65s65jfsm" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -212,7 +257,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/01/你好-Hexo/" data-id="cjo00e3k50004pgr669xrxjp4" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/01/你好-Hexo/" data-id="cjo5ply3h0005n8r6fergcj8v" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -254,7 +299,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/01/hello-world/" data-id="cjo00e3jy0002pgr6e0u0gwdm" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/11/01/hello-world/" data-id="cjo5ply350002n8r6aykinjnl" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -313,6 +358,10 @@
       <ul>
         
           <li>
+            <a href="/2018/11/06/svg使用/">svg使用</a>
+          </li>
+        
+          <li>
             <a href="/2018/11/02/正则表达式（身份证）/">正则表达式（身份证）</a>
           </li>
         
@@ -326,10 +375,6 @@
         
           <li>
             <a href="/2018/11/01/你好-Hexo/">你好,Hexo</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/01/hello-world/">Hello World</a>
           </li>
         
       </ul>
